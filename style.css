@@ -1,0 +1,97 @@
+.navbar {
+  background: none;
+}
+
+body,
+html {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.main-img {
+  position: relative;
+  background: url(https://oir.mobi/uploads/posts/2021-06/1623429879_47-oir_mobi-p-finlyandiya-gori-priroda-krasivo-foto-50.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-down {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: rgba(0, 8, 0, 0.849);
+}
+
+.second-page-img {
+  position: relative;
+  background: url(https://www.globaltimes.cn/Portals/0/attachment/2021/2021-03-21/a0a66660-084b-4282-a75f-4469c92441dd.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.second-page-content {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translate(-100%, 0%);
+  background-color: rgba(0, 8, 0, 0.849);
+  min-height: 100%;
+}
+
+.third-page-img {
+  position: relative;
+  background: url(third-img.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.thirt-page-content {
+  position: absolute;
+  background-color: rgba(0, 8, 0, 0.849);
+  min-height: 100%;
+}
+
+.content-on-main-img {
+  position: absolute;
+  min-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grain {
+  position: absolute;
+  background-color: rgba(0, 8, 0, 0.849);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.mount-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.text-main {
+  height: 300px;
+  position: relative;
+}
+
+.text-main-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
