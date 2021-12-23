@@ -8,6 +8,7 @@ body,
 html {
   width: 100% !important;
   height: 100% !important;
+  overflow-x: hidden;
 }
 
 .main-img {
@@ -33,8 +34,7 @@ html {
 .content-down {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translateY(-100%);
   background-color: rgba(0, 29, 37, 0.97);
 }
 
@@ -58,7 +58,7 @@ html {
   left: 100%;
   transform: translate(-100%, 0%);
   background-color: rgba(0, 29, 37, 0.97);
-  min-height: 100%;
+  min-height: 5%;
 }
 
 .third-page-img {
@@ -74,7 +74,7 @@ html {
 .thirt-page-content {
   position: absolute;
   background-color: rgba(0, 29, 37, 0.97);
-  min-height: 100%;
+  min-height: 5%;
 }
 
 .b-page3 {
@@ -130,7 +130,38 @@ html {
   font-size: 12pt;
 }
 
+.more-content {
+  background-color: rgb(0, 29, 37);
+}
+
+.arrow-down {
+  display: block;
+}
+
+.hidden-content {
+  display: block;
+}
+
+.hidden-content-mobile {
+  display: none;
+}
+
+.map {
+  width: 400px;
+  height: 300px;
+}
+
+.round-background {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
 @media (max-width: 996px) {
+  .map {
+    width: 320px;
+    height: 240px;
+  }
   .text-main-content {
     left: 50%;
     text-align: center;
@@ -149,7 +180,7 @@ html {
     display: block;
   }
   .content-down {
-    width: 100%;
+    max-width: 100%;
     position: initial;
     top: 0;
     left: 0;
@@ -168,6 +199,7 @@ html {
   }
 
   .second-page-content {
+    min-height: 100%;
     position: initial;
     top: 0;
     left: 0;
@@ -191,6 +223,7 @@ html {
 
   .thirt-page-content {
     position: initial;
+    min-height: 100%;
     top: 0;
     left: 0;
     transform: translate(0%, 0%);
@@ -226,6 +259,9 @@ html {
     top: 95%;
     left: 50%;
     transform: translate(-50%, -95%);
+  }
+  .hidden-content-mobile {
+    display: block;
   }
 }
 
