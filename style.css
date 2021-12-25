@@ -139,7 +139,7 @@ html {
 }
 
 .hidden-content {
-  display: block;
+  display: none;
 }
 
 .hidden-content-mobile {
@@ -152,9 +152,35 @@ html {
 }
 
 .round-background {
+  position: relative;
   width: 100px;
   height: 100px;
   background-color: gray;
+  border-radius: 50%;
+}
+
+.icon-on-round {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-to-contact {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form-contact {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input::placeholder {
+  color: lightgrey !important;
+  opacity: 1;
 }
 
 @media (max-width: 996px) {
