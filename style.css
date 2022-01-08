@@ -4,21 +4,28 @@
   background: none;
 }
 
-body,
+body {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 html {
-  width: 100% !important;
   height: 100% !important;
   overflow-x: hidden;
 }
 
 .main-img {
   position: relative;
-  background: url(https://sport-marafon.ru/upload/iblock/ac3/1307-001.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
   height: 100%;
+  transform-style: inherit;
+  background: url(https://sport-marafon.ru/upload/iblock/ac3/1307-001.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .first-img {
@@ -43,8 +50,6 @@ html {
   background: url(https://frantic.s3.eu-west-1.amazonaws.com/suomenlinna/2014/06/kuvitus_kustaanmiekkatumma-1514x800.jpg);
   background-attachment: fixed;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 
@@ -58,7 +63,10 @@ html {
   left: 100%;
   transform: translate(-100%, 0%);
   background-color: rgba(0, 29, 37, 0.97);
-  min-height: 5%;
+  min-height: 10%;
+  min-width: 10%;
+  margin: 0;
+  overflow: hidden;
 }
 
 .third-page-img {
@@ -74,7 +82,10 @@ html {
 .thirt-page-content {
   position: absolute;
   background-color: rgba(0, 29, 37, 0.97);
-  min-height: 5%;
+  min-height: 10%;
+  min-width: 10%;
+  margin: 0;
+  overflow: hidden;
 }
 
 .b-page3 {
@@ -135,20 +146,38 @@ html {
 }
 
 .arrow-down {
+  position: relative;
   display: block;
 }
 
 .hidden-content {
+  position: absolute;
   display: none;
+  opacity: 0;
 }
 
 .hidden-content-mobile {
-  display: none;
+  opacity: 0;
+  vertical-align: middle;
+  position: absolute;
 }
 
 .map {
-  width: 400px;
-  height: 300px;
+  position: relative;
+  width: 100vh;
+  height: 420px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+.map-main {
+  position: relative;
+  width: 75%;
+  height: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
 }
 
 .round-background {
