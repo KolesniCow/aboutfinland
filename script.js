@@ -79,4 +79,7 @@ if (!isMobile) {
   thirdBlockContent.addEventListener('mouseleave', () =>
     hiddenContent(thirdBlockContent, hidenContentBlockThird)
   );
+} else {
+  hidenContentBlockThird.style.display = 'block';
+  hidenContentBlockSecond.style.display = 'block';
 }

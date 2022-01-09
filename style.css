@@ -212,6 +212,11 @@ input::placeholder {
   opacity: 1;
 }
 
+.in-down-page {
+  position: relative;
+  left: 50%;
+}
+
 @media (max-width: 996px) {
   .map {
     width: 320px;
