@@ -80,6 +80,8 @@ if (!isMobile) {
     hiddenContent(thirdBlockContent, hidenContentBlockThird)
   );
 } else {
-  hidenContentBlockThird.style.display = 'block';
-  hidenContentBlockSecond.style.display = 'block';
+  hidenContentBlockThird.style.opacity = '1';
+  hidenContentBlockThird.style.position = 'relative';
+  hidenContentBlockSecond.style.opacity = '1';
+  hidenContentBlockSecond.style.position = 'relative';
 }

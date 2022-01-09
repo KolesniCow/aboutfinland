@@ -12,6 +12,7 @@ body {
   transform-style: preserve-3d;
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -212,12 +213,17 @@ input::placeholder {
   opacity: 1;
 }
 
-.in-down-page {
-  position: relative;
+.down-page {
+  position: absolute;
   left: 50%;
+  top: 95%;
+  transform: translate(-50%, -95%);
 }
 
 @media (max-width: 996px) {
+  .down-page-second {
+    display: none;
+  }
   .map {
     width: 320px;
     height: 240px;
